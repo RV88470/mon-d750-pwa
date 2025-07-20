@@ -6,7 +6,8 @@
     <title>Réglages D750 PWA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#34495e"> <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <meta name="theme-color" content="#34495e">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
     <link rel="apple-touch-startup-image" href="icons/icon-512x512.png">
 </head>
 <body>
@@ -16,6 +17,92 @@
     </header>
 
     <main>
+        <section id="filter-section">
+            <h2>Filtrer par type de photo</h2>
+            <nav id="filter-nav">
+                <div class="filter-item active" data-filter="all">
+                    <img src="img/all_photos.svg" alt="Toutes les photos">
+                    <span>Tout</span>
+                </div>
+                <div class="filter-item" data-filter="Bébé">
+                    <img src="img/baby.svg" alt="Bébé">
+                    <span>Bébé</span>
+                </div>
+                <div class="filter-item" data-filter="Paysage">
+                    <img src="img/landscape.svg" alt="Paysage">
+                    <span>Paysage</span>
+                </div>
+                <div class="filter-item" data-filter="Portrait">
+                    <img src="img/portrait.svg" alt="Portrait">
+                    <span>Portrait</span>
+                </div>
+                <div class="filter-item" data-filter="Action / Sport">
+                    <img src="img/action.svg" alt="Action / Sport">
+                    <span>Action / Sport</span>
+                </div>
+                <div class="filter-item" data-filter="Faune">
+                    <img src="img/wildlife.svg" alt="Faune">
+                    <span>Faune</span>
+                </div>
+                <div class="filter-item" data-filter="Macrophotographie">
+                    <img src="img/macro.svg" alt="Macrophotographie">
+                    <span>Macro</span>
+                </div>
+                <div class="filter-item" data-filter="Photo de Nuit / Astro">
+                    <img src="img/night.svg" alt="Photo de Nuit / Astro">
+                    <span>Nuit / Astro</span>
+                </div>
+                <div class="filter-item" data-filter="Voie Lactée">
+                    <img src="img/milkyway.svg" alt="Voie Lactée">
+                    <span>Voie Lactée</span>
+                </div>
+                <div class="filter-item" data-filter="Light Painting">
+                    <img src="img/light_painting.svg" alt="Light Painting">
+                    <span>Light Painting</span>
+                </div>
+                <div class="filter-item" data-filter="Street Photography">
+                    <img src="img/street.svg" alt="Street Photography">
+                    <span>Street</span>
+                </div>
+                <div class="filter-item" data-filter="Intérieur (Faible Lumière)">
+                    <img src="img/interior.svg" alt="Intérieur (Faible Lumière)">
+                    <span>Intérieur</span>
+                </div>
+                <div class="filter-item" data-filter="Événement (Intérieur)">
+                    <img src="img/event.svg" alt="Événement (Intérieur)">
+                    <span>Événement</span>
+                </div>
+                <div class="filter-item" data-filter="Coucher de Soleil">
+                    <img src="img/sunset.svg" alt="Coucher de Soleil">
+                    <span>Coucher de Soleil</span>
+                </div>
+                <div class="filter-item" data-filter="HDR">
+                    <img src="img/hdr.svg" alt="HDR">
+                    <span>HDR</span>
+                </div>
+                <div class="filter-item" data-filter="Photo de Groupe">
+                    <img src="img/group.svg" alt="Photo de Groupe">
+                    <span>Groupe</span>
+                </div>
+                <div class="filter-item" data-filter="Nuage / Ciel">
+                    <img src="img/clouds.svg" alt="Nuage / Ciel">
+                    <span>Nuage / Ciel</span>
+                </div>
+                <div class="filter-item" data-filter="Nature (Général)">
+                    <img src="img/nature.svg" alt="Nature (Général)">
+                    <span>Nature</span>
+                </div>
+                <div class="filter-item" data-filter="Feux d'Artifice">
+                    <img src="img/fireworks.svg" alt="Feux d'Artifice">
+                    <span>Feux d'Artifice</span>
+                </div>
+                <div class="filter-item" data-filter="Zooming / Zoom Burst">
+                    <img src="img/zoom.svg" alt="Zooming / Zoom Burst">
+                    <span>Zooming</span>
+                </div>
+            </nav>
+        </section>
+
         <section id="settings-table">
             <h2>Tableau des Réglages</h2>
             <div class="table-container">
