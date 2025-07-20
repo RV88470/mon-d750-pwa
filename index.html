@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réglages D750 PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#34495e"> <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="apple-touch-startup-image" href="icons/icon-512x512.png">
+</head>
+<body>
+    <header>
+        <h1>Réglages Nikon D750</h1>
+        <p>Votre guide rapide pour tous les types de photo.</p>
+    </header>
+
+    <main>
+        <section id="settings-table">
+            <h2>Tableau des Réglages</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type de Photo</th>
+                            <th>Mode de Prise de Vue</th>
+                            <th>Priorité AF</th>
+                            <th>Mode Zone AF</th>
+                            <th>Mode Mesure</th>
+                            <th>Focale (mm) indicative</th>
+                            <th>ISO</th>
+                            <th>Ouverture (f/)</th>
+                            <th>Vitesse d'obturation (s)</th>
+                            <th>Balance des blancs</th>
+                            <th>Qualité d'image</th>
+                            <th>Notes Spécifiques</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bébé (Nouveau-né/Repos)</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique (œil)</td>
+                            <td>Matrice</td>
+                            <td>50-85 (Portrait)</td>
+                            <td>400-1600</td>
+                            <td>f/2.8 - f/4</td>
+                            <td>1/125 - 1/250</td>
+                            <td>Auto / Ombre / Nuageux</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>**Lumière naturelle douce** (près d'une fenêtre). Assurez la sécurité et le confort du bébé. Silencieux, discret.</td>
+                        </tr>
+                        <tr>
+                            <td>Bébé (Actif/Jeux)</td>
+                            <td>S (Priorité Vitesse) ou A</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Suivi 3D ou Groupe</td>
+                            <td>Matrice</td>
+                            <td>35-85 (Polyvalent)</td>
+                            <td>800-3200</td>
+                            <td>f/2.8 - f/5.6</td>
+                            <td>1/250 - 1/500+</td>
+                            <td>Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Soyez prêt à la réactivité. Capturez les expressions fugaces. Mettre l'appareil en **mode rafale (CH)**.</td>
+                        </tr>
+                        <tr>
+                            <td>Paysage (Général)</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique ou Zone</td>
+                            <td>Matrice</td>
+                            <td>14-35 (Grand-angle)</td>
+                            <td>100-400 (bas)</td>
+                            <td>f/8 - f/16</td>
+                            <td>Auto (ou Trépied)</td>
+                            <td>Lumière du jour / Nuageux</td>
+                            <td>NEF (RAW)</td>
+                            <td>Utilisez un **trépied**. Pensez à l'hyperfocale pour une netteté maximale. Active D-Lighting activé si grande différence de lumière.</td>
+                        </tr>
+                        <tr>
+                            <td>Portrait</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique (œil) ou Zone</td>
+                            <td>Matrice ou Pondérée centrale</td>
+                            <td>50-135 (Standard/Télé)</td>
+                            <td>100-800</td>
+                            <td>f/1.8 - f/4</td>
+                            <td>Auto</td>
+                            <td>Flash / Ombre</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Concentrez-vous sur l'œil le plus proche. Utilisez des objectifs lumineux pour un beau bokeh. Idéal pour un détachement du sujet.</td>
+                        </tr>
+                        <tr>
+                            <td>Action / Sport (Général)</td>
+                            <td>S (Priorité Vitesse)</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Suivi 3D ou Groupe</td>
+                            <td>Matrice</td>
+                            <td>70-200, 300+ (Téléobjectif)</td>
+                            <td>400-6400+</td>
+                            <td>Auto (large)</td>
+                            <td>1/500 - 1/2000+</td>
+                            <td>Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Privilégiez des vitesses rapides pour **figer le mouvement**. Utilisez le **mode rafale (CH)**. Pour les sports en intérieur ou nocturnes, des ISO très élevés sont requis.</td>
+                        </tr>
+                        <tr>
+                            <td>Filés (Panning)</td>
+                            <td>S (Priorité Vitesse)</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Suivi 3D ou Groupe</td>
+                            <td>Matrice</td>
+                            <td>50-200 (Standard/Télé)</td>
+                            <td>100-800</td>
+                            <td>Auto (f/8 - f/16)</td>
+                            <td>1/15 - 1/60 (à tester)</td>
+                            <td>Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>**Suivez le sujet en mouvement pendant la prise.** Plus la vitesse est lente, plus le filé est prononcé. Entraînez-vous !</td>
+                        </tr>
+                        <tr>
+                            <td>Faune (Animalier)</td>
+                            <td>S (Priorité Vitesse)</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Groupe ou Suivi 3D</td>
+                            <td>Matrice</td>
+                            <td>200-600+ (Téléobjectif)</td>
+                            <td>800-6400+</td>
+                            <td>Auto (large)</td>
+                            <td>1/1000 - 4000+</td>
+                            <td>Auto</td>
+                            <td>NEF (RAW)</td>
+                            <td>Attention particulière à la mise au point sur les yeux de l'animal. Très longs téléobjectifs souvent requis. Patience essentielle.</td>
+                        </tr>
+                        <tr>
+                            <td>Macrophotographie</td>
+                            <td>M (Manuel)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique</td>
+                            <td>Spot</td>
+                            <td>60-105 (Macro)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>Variable (dépend de la lumière)</td>
+                            <td>Flash / Personnalisée</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied indispensable**. Focus stacking pour plus de profondeur de champ. Objectifs macro spécifiques.</td>
+                        </tr>
+                        <tr>
+                            <td>Photo de Nuit / Astro (Fixe)</td>
+                            <td>M (Manuel)</td>
+                            <td>MF (Manuel)</td>
+                            <td>Point unique</td>
+                            <td>Matrice</td>
+                            <td>14-24 (Grand-angle)</td>
+                            <td>800-6400+</td>
+                            <td>f/2.8 - f/5.6</td>
+                            <td>15s - 30s+ (Pose B/T)</td>
+                            <td>Kelvin / Personnalisée</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied obligatoire**. Utiliser un déclencheur à distance. Réduction du bruit en pose longue activée.</td>
+                        </tr>
+                        <tr>
+                            <td>Voie Lactée</td>
+                            <td>M (Manuel)</td>
+                            <td>MF (Manuel)</td>
+                            <td>Point unique (vers l'infini)</td>
+                            <td>Matrice</td>
+                            <td>14-24 (Très grand-angle)</td>
+                            <td>3200-6400 (ou plus)</td>
+                            <td>f/2.8 - f/4</td>
+                            <td>15s - 25s (Règle des 500)</td>
+                            <td>Kelvin (3000-4000K)</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied essentiel**, pas de lune, pas de pollution lumineuse. **Mise au point manuelle à l'infini**, utiliser le live view pour affiner sur une étoile brillante.</td>
+                        </tr>
+                        <tr>
+                            <td>Light Painting</td>
+                            <td>M (Manuel)</td>
+                            <td>MF (Manuel)</td>
+                            <td>Point unique</td>
+                            <td>Matrice</td>
+                            <td>24-50 (Standard/Large)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>10s - 30s+ (Pose B/T)</td>
+                            <td>Lumière du jour / Incandescent</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied indispensable, obscurité totale.** Utiliser des sources lumineuses mobiles pour "dessiner" pendant l'exposition.</td>
+                        </tr>
+                        <tr>
+                            <td>Street Photography (Urbain)</td>
+                            <td>A (Priorité Ouverture) ou S</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Point unique ou Zone</td>
+                            <td>Matrice</td>
+                            <td>24-50 (Standard)</td>
+                            <td>400-3200</td>
+                            <td>f/4 - f/8</td>
+                            <td>1/125 - 1/500</td>
+                            <td>Auto</td>
+                            <td>JPEG Fine</td>
+                            <td>Discrétion. Pré-réglez votre mise au point (**zone focusing**) pour réagir vite. Focales polyvalentes.</td>
+                        </tr>
+                        <tr>
+                            <td>Intérieur (Faible Lumière)</td>
+                            <td>A (Priorité Ouverture) ou M</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Zone ou Automatique</td>
+                            <td>Matrice ou Pondérée centrale</td>
+                            <td>24-70, 50 (Lumineux)</td>
+                            <td>1600-12800+</td>
+                            <td>f/1.8 - f/4</td>
+                            <td>1/30 - 1/125</td>
+                            <td>Auto / Incandescent / Personnalisée</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Utilisez des **objectifs très lumineux**. Ne craignez pas de monter en ISO. Pensez au flash d'appoint indirect si nécessaire.</td>
+                        </tr>
+                        <tr>
+                            <td>Événement (Intérieur)</td>
+                            <td>A (Priorité Ouverture) ou M</td>
+                            <td>AF-C (AF continu)</td>
+                            <td>Zone ou Automatique</td>
+                            <td>Matrice</td>
+                            <td>24-70, 70-200 (Zoom polyvalent)</td>
+                            <td>800-6400+</td>
+                            <td>f/2.8 - f/4</td>
+                            <td>1/60 - 1/250</td>
+                            <td>Flash / Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Utilisez un **flash externe si nécessaire (reflété au plafond/mur)**. Objectifs lumineux pour compenser le manque de lumière.</td>
+                        </tr>
+                        <tr>
+                            <td>Coucher de Soleil</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique</td>
+                            <td>Pondérée centrale ou Spot</td>
+                            <td>24-70, 70-200 (Polyvalent)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>Auto</td>
+                            <td>Nuageux / Ombre / Personnalisée (Kelvin)</td>
+                            <td>NEF (RAW)</td>
+                            <td>Exposez pour les hautes lumières (le soleil) et n'hésitez pas à **sous-exposer légèrement** pour des couleurs plus saturées. Utilisez des filtres (ND dégradé).</td>
+                        </tr>
+                        <tr>
+                            <td>HDR (Haute Plage Dynamique)</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique</td>
+                            <td>Matrice</td>
+                            <td>Variable</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>Auto (Braketing)</td>
+                            <td>Lumière du jour / Auto</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied recommandé**. Utilisez le **braketing d'exposition** (-2, 0, +2 EV par exemple). Assemblez les images en post-production. Désactivez Active D-Lighting.</td>
+                        </tr>
+                        <tr>
+                            <td>Photo de Groupe</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique ou Zone</td>
+                            <td>Matrice</td>
+                            <td>24-70, 50 (Standard)</td>
+                            <td>100-800</td>
+                            <td>f/5.6 - f/11</td>
+                            <td>1/60 - 1/250</td>
+                            <td>Flash / Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Assurez-vous que **tous les visages sont nets**. Une ouverture plus fermée est nécessaire pour une profondeur de champ suffisante.</td>
+                        </tr>
+                        <tr>
+                            <td>Nuage / Ciel</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique</td>
+                            <td>Matrice ou Pondérée centrale</td>
+                            <td>14-35 (Grand-angle) ou 70-200 (Détail)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>Auto</td>
+                            <td>Lumière du jour / Nuageux / Kelvin</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>Utilisez un **filtre polarisant** pour accentuer les contrastes et la saturation des nuages et du ciel.</td>
+                        </tr>
+                        <tr>
+                            <td>Nature (Général)</td>
+                            <td>A (Priorité Ouverture)</td>
+                            <td>AF-S (AF ponctuel)</td>
+                            <td>Point unique ou Zone</td>
+                            <td>Matrice</td>
+                            <td>24-70 (Polyvalent)</td>
+                            <td>100-800</td>
+                            <td>f/5.6 - f/11</td>
+                            <td>Auto</td>
+                            <td>Lumière du jour / Nuageux / Ombre</td>
+                            <td>NEF (RAW)</td>
+                            <td>Couvre les éléments statiques (fleurs, arbres, cascades). Pensez aux filtres (ND, polarisant) pour certains effets.</td>
+                        </tr>
+                        <tr>
+                            <td>Feux d'Artifice</td>
+                            <td>M (Manuel)</td>
+                            <td>MF (Manuel)</td>
+                            <td>Point unique (vers l'infini)</td>
+                            <td>Matrice</td>
+                            <td>24-70 (Standard/Grand-angle)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>1s - 4s (à tester)</td>
+                            <td>Lumière du jour / Flash</td>
+                            <td>NEF (RAW)</td>
+                            <td>**Trépied indispensable.** Faites la mise au point manuellement à l'infini. Gardez l'obturateur ouvert pour plusieurs explosions.</td>
+                        </tr>
+                        <tr>
+                            <td>Zooming / Zoom Burst</td>
+                            <td>S (Priorité Vitesse)</td>
+                            <td>MF (Manuel)</td>
+                            <td>Point unique</td>
+                            <td>Matrice</td>
+                            <td>Zoom (objectif polyvalent)</td>
+                            <td>100-400</td>
+                            <td>f/8 - f/16</td>
+                            <td>1/15 - 1/60 (à tester)</td>
+                            <td>Auto</td>
+                            <td>NEF (RAW) + JPEG Fine</td>
+                            <td>**Tournez la bague de zoom pendant l'exposition.** Trépied recommandé pour les sujets statiques, ou main levée pour les sujets en mouvement.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Votre Nom/Site. Tous droits réservés.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
